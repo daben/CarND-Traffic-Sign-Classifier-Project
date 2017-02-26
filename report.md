@@ -11,7 +11,6 @@
 [image_preprocessing]: ./images/preprocessed.png "Preprocessed images"
 [image_sharpening]: ./images/sharpening.png "Sharpening"
 [image_augmentation]: ./images/augmented.png "Augmented"
-[stimulus_1]: ./images/stimulus_1.png "Stimulus"
 [transformer_1]: ./images/transformer_1.png "Transformer output"
 [image_training_progress]: ./images/training_progress.png "Training progress"
 [image_extra_signs]: ./images/extra_signs.png
@@ -278,7 +277,7 @@ Some comments.
 
 After the input layer I introduce a differentiable module described in this [paper](https://arxiv.org/abs/1506.02025) to give to the network the ability to learn invariance to translation, scale and rotation simplifying the task of the rest of the network. The implementation comes from https://github.com/tensorflow/models/tree/master/transformer and I adapt it to TensorFlow 1.0 (cells 22 and 23). As an example of the effect of this module, if we input this image (original and preprocessed) to the network:
 
-![Stimulus][stimulus_1]
+![Stimulus](./images/stimulus1.png)
 
 once trained, the output of the transformer is a scaled an centered version of the original:
 
